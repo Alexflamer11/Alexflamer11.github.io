@@ -1,0 +1,218 @@
+/* MISCELLANEOUS */
+
+body {
+	background-image: radial-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+	/*background-color: rgb(50, 50, 50);*/
+	color: white;
+}
+
+.left {
+	float: left;
+}
+
+
+
+
+
+/* TOPBAR */
+
+#topbar {
+	margin: 0px;
+	background-color: black;
+	position: sticky;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+}
+
+#topbar h2 {
+	margin: 0px;
+	padding-left: 20px;
+	font-size: 26px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+/* SETTINGS */
+
+#settings-container {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+}
+
+.dropdown {
+	position: relative;
+	float: left;
+}
+
+.settingsButton {
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	border: 0px;
+	padding: 0px 10px;
+	display: inline-block;
+	width: 125px;
+	
+	outline: none;
+}
+
+.settingsButton:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+.dropdownDiv {
+	position: absolute;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownDiv div {
+	cursor: pointer;
+	padding: 10px;
+	padding-right: 30px;
+}
+
+.dropdownDiv div:hover {
+	background-color: rgb(225, 225, 225);
+}
+
+
+
+/* Settings Popup */
+
+.settings-popup {
+	text-align: center;
+	z-index: 1;
+}
+
+.option-container {
+	height: 25px;
+}
+
+.settings-input {
+	margin-left: 30px;
+	float: right;
+	width: 45px;
+	outline: none;
+}
+
+.settings-button {
+	color: white;
+	border: none;
+	padding: 0px;
+	margin-left: 30px;
+	width: 51px;
+	height: 19px;
+	outline: none;
+}
+
+.settings-button.enabled {
+	background-color: rgb(0, 255, 0);
+}
+
+.settings-button.disabled {
+	background-color: rgb(255, 0, 0);
+}
+
+.dual-separator {
+	margin: 0px 5px;
+	float: right;
+}
+
+.save-cancel {
+	width: 75px;
+	height: 20px;
+	font-size: 12px;
+	background-color: black;
+	color: white;
+	margin: 0px 2px;
+	cursor: pointer;
+	outline: none;
+}
+
+.save-cancel:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+
+
+
+
+/* MAIN PAGE */
+
+#title {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 0px 2px 3px rgba(0, 0, 0 0.5);
+	margin-bottom: 10px;
+}
+
+#creator {
+	text-align: center;
+	margin-top: 0px;
+}
+
+
+
+
+
+/* GAME */
+
+#game-container {
+	text-align: center;
+	width: 100%;
+}
+
+#SnakeCanvas {
+	border-style: solid;
+	margin: 8px;
+}
+
+#highscore {
+	float: left;
+	font-size: 20px;
+	padding-left: 16px;
+	padding-bottom: 10px;
+}
+
+#score {
+	float: right;
+	font-size: 20px;
+	padding-right: 16px;
+	padding-bottom: 10px;
+}
+
+
+
+/* GAME POPUP */
+
+.game-popup {
+	padding: 0px 25px 20px 25px;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.popup-button {
+	color: white;
+	font-size: 14px;
+	background-color: rgb(0, 0, 0);
+	outline: none;
+}
+
+.popup-button:hover {
+	background-color: rgb(50, 50, 50);
+}

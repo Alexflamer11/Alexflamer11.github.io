@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=“en”>
+	<head>
+		<meta charset=“utf-8”>
+		<title>Minesweeper</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<h2>Javascript Snake</h2>
+			<div id="settings-container">
+				<!-- Difficulties -->
+				<div class="dropdown">
+					<button class="settingsButton" id="difficultyDropdownButton">Difficulty<br>Easy</button>
+					<div class="dropdownDiv" id="difficultyDropdown" hidden></div>
+				</div>
+				
+				<!-- Game Settings -->
+				<div class="dropdown">
+					<button class="settingsButton" id="gameSettingsButton">Game<br>Settings</button>
+					<div class="dropdownDiv" id="gameSettingsDropdownDiv" hidden>
+						<div id="gameSettings">Edit</div>
+					</div>
+				</div>
+				
+				<!-- Board Settings -->
+				<div class="dropdown">
+					<button class="settingsButton" id="boardSettingsButton">Board<br>Settings</button>
+					<div class="dropdownDiv" id="boardSettingsDropdownDiv" hidden>
+						<div id="boardSettings">Edit</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h1 id="title">Javascript Snake</h1>
+		<h2 id="creator">By Alex</h2>
+		
+		<div id="game-container">
+			<canvas id="SnakeCanvas"></canvas>
+		</div>
+		
+		<div id="highscore">
+			Highscore: 0
+		</div>
+		<div id="score">
+			Length: 0
+		</div>
+		
+		<script src="initial.js"></script>
+		<script src="functions.js"></script>
+		<script src="snake.js"></script>
+		<script src="webpage.js"></script>
+	</body>
+</html>
